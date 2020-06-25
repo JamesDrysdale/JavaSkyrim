@@ -17,8 +17,8 @@ public class OneHandedSwordTest {
         assertEquals("Dawnbreaker", dawnbreaker.getName());
     }
     @Test
-    public void canGetName(){
-        assertEquals("Dawnbreaker", dawnbreaker.getDamage());
+    public void canGetDamageValue(){
+        assertEquals(50, dawnbreaker.getDamage(), 0);
     }
 
 

@@ -1,6 +1,6 @@
 package weapons;
 
-public class OneHandedSword {
+public class OneHandedSword extends Weapon{
     private String name;
     private double damage;
 
