@@ -18,4 +18,9 @@ public class BretonTest {
         assertEquals("Soyinka", breton1.getName());
     }
 
+    @Test
+    public void bretonHasHealthPoints(){
+        assertEquals(100, breton.getHealthPoints(), 0);
+    }
+
 }

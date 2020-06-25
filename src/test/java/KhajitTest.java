@@ -15,7 +15,7 @@ public class KhajitTest {
     }
 
     @Test
-    public void bretonHasAName(){
+    public void khajitHasAName(){
         assertEquals("M'aiq", khajit1.getName());
     }
 
