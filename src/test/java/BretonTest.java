@@ -23,4 +23,9 @@ public class BretonTest {
         assertEquals(100, breton1.getHealthPoints(), 0);
     }
 
+    @Test
+    public void bretonHasStaminaPoints(){
+        assertEquals(80, breton1.getStamina(), 0);
+    }
+
 }
