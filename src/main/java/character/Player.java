@@ -13,9 +13,9 @@ public abstract class Player {
 
     public Player(String name, Modifiers modifier){
         this.name = name;
-        this.HP = 1 * modifier.baseHP;
-        this.Stamina = 1 * modifier.baseStamina;
-        this.Magic = 1 * modifier.baseMagic;
+        this.HP = 100 * modifier.baseHP;
+        this.Stamina = 100 * modifier.baseStamina;
+        this.Magic = 100 * modifier.baseMagic;
         this.MeleeDmg = 1 * modifier.baseMeleeDmg;
         this.MagicDmg = 1 * modifier.baseMagicDmg;
         this.RangeDmg = 1 * modifier.baseRangeDmg;
