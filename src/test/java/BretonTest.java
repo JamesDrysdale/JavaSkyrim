@@ -15,7 +15,7 @@ public class BretonTest {
 
     @Test
     public void bretonHasAName(){
-        assertEquals("Soyinka", breton.getName());
+        assertEquals("Soyinka", breton1.getName());
     }
 
 }

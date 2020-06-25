@@ -13,15 +13,17 @@ public abstract class Player {
 
     public Player(String name, Modifiers modifier){
         this.name = name;
-        this.HP = 100 * modifier.baseHP;
-        this.Stamina = 100 * modifier.baseStamina;
-        this.Magic = 100 * modifier.baseMagic;
-        this.MeleeDmg = 1 * modifier.baseMeleeDmg;
-        this.MagicDmg = 1 * modifier.baseMagicDmg;
-        this.RangeDmg = 1 * modifier.baseRangeDmg;
-        this.PRes = 1 * modifier.physicalRes;
-        this.MRes = 1 * modifier.magicRes;
+        this.HP = 100 * modifier.getBaseHP();
+        this.Stamina = 100 * modifier.getBaseStamina();
+        this.Magic = 100 * modifier.getBaseMagic();
+        this.MeleeDmg = 1 * modifier.getBaseMeleeDmg();
+        this.MagicDmg = 1 * modifier.getBaseMagicDmg();
+        this.RangeDmg = 1 * modifier.getBaseRangeDmg();
+        this.PRes = 1 * modifier.getPhysicalRes();
+        this.MRes = 1 * modifier.getMagicRes();
     }
 
-
+    public String getName() {
+        return name;
+    }
 }
