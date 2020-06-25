@@ -1,6 +1,8 @@
 package characters.enemies;
 
-public abstract class Enemy {
+import characters.behaviours.IMelee;
+
+public abstract class Enemy implements IMelee {
     private String name;
     private double HP;
     private double meleeDmg;
@@ -35,5 +37,12 @@ public abstract class Enemy {
         return magicDmg;
     }
 
+    public void takeDamage(double damage){
+        this.HP -= damage;
+    }
+
+    public void melee(IMelee opponent){
+        //
+    }
 
 }

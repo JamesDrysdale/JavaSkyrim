@@ -35,4 +35,9 @@ public class SkeeverTest {
         assertEquals(0, skeever.getMagicDmg(), 0);
     }
 
+    @Test
+    public void canTakeDamage() {
+        skeever.takeDamage(1);
+        assertEquals(9, skeever.getHP(), 0);
+    }
 }
