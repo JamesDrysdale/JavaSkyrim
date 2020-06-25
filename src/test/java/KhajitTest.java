@@ -19,5 +19,10 @@ public class KhajitTest {
         assertEquals("M'aiq", khajit1.getName());
     }
 
+    @Test
+    public void khajitHasHealthPoints(){
+        assertEquals(100, khajit1.getHealthPoints(), 0);
+    }
+
 }
 
