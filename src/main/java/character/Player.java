@@ -23,4 +23,5 @@ public abstract class Player {
         this.MRes = 1 * modifier.magicRes;
     }
 
+
 }
