@@ -24,5 +24,10 @@ public class KhajitTest {
         assertEquals(100, khajit1.getHealthPoints(), 0);
     }
 
+    @Test
+    public void khajitHasStaminaPoints(){
+        assertEquals(130, khajit1.getStamina(), 0);
+    }
+
 }
 
