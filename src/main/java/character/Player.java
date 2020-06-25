@@ -34,4 +34,28 @@ public abstract class Player {
     public double getStamina() {
         return Stamina;
     }
+
+    public double getMagic() {
+        return Magic;
+    }
+
+    public double getMeleeDmg() {
+        return MeleeDmg;
+    }
+
+    public double getMagicDmg() {
+        return MagicDmg;
+    }
+
+    public double getRangeDmg() {
+        return RangeDmg;
+    }
+
+    public double getPRes() {
+        return PRes;
+    }
+
+    public double getMRes() {
+        return MRes;
+    }
 }

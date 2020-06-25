@@ -35,22 +35,26 @@ public class BretonTest {
 
     @Test
     public void bretonHasBaseMeleeDmg(){
-        assertEquals(0.7, breton1.getBaseMeleeDmg(), 0.0);
+        assertEquals(0.7, breton1.getMeleeDmg(), 0.0);
     }
 
     @Test
     public void bretonHasBaseRangeDmg(){
-        assertEquals(1.8, breton1.getBaseRangeDmg(), 0.0);
+        assertEquals(0.7, breton1.getRangeDmg(), 0.0);
     }
 
     @Test
     public void bretonHasBaseMagicDmg(){
-        assertEquals(0.7, breton1.getBaseMagicDmg(), 0.0);
+        assertEquals(1.8, breton1.getMagicDmg(), 0.0);
     }
-    
+
     @Test
     public void bretonHasPhysicalRes(){
-        assertEquals(150, breton1.getPhysicalResistance(), 0.0);
+        assertEquals(0.8, breton1.getPRes(), 0.0);
+    }
+    @Test
+    public void bretonHasMagicRes(){
+        assertEquals(1.2, breton1.getMRes(), 0.0);
     }
 
 }
