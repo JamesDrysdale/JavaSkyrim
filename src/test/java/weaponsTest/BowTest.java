@@ -1,24 +1,27 @@
+package weaponsTest;
+
 import org.junit.Before;
 import org.junit.Test;
+import weapons.Bow;
 import weapons.OneHandedSword;
 
 import static org.junit.Assert.assertEquals;
 
-public class OneHandedSwordTest {
-    OneHandedSword dawnbreaker;
+public class BowTest {
+    Bow bow;
 
     @Before
     public void setup(){
-        dawnbreaker = new OneHandedSword("Dawnbreaker", 50);
+        bow = new Bow("Glass Bow of the Stag Prince", 30);
     }
 
     @Test
     public void canGetName(){
-        assertEquals("Dawnbreaker", dawnbreaker.getName());
+        assertEquals("Glass Bow of the Stag Prince", bow.getName());
     }
     @Test
     public void canGetDamageValue(){
-        assertEquals(50, dawnbreaker.getDamage(), 0);
+        assertEquals(30, bow.getDamage(), 0);
     }
 
 

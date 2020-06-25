@@ -1,5 +1,7 @@
-import character.Breton;
-import character.Modifiers;
+package playersTest;
+
+import characters.players.Breton;
+import characters.players.Modifiers;
 import org.junit.Before;
 import org.junit.Test;
 

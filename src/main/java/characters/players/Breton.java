@@ -1,4 +1,4 @@
-package character;
+package characters.players;
 
 public class Breton extends Player {
 

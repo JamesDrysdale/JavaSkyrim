@@ -1,4 +1,4 @@
-package character;
+package characters.players;
 
 public abstract class Player {
     private String name;

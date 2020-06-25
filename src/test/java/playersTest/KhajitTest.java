@@ -1,5 +1,7 @@
-import character.Khajit;
-import character.Modifiers;
+package playersTest;
+
+import characters.players.Khajit;
+import characters.players.Modifiers;
 import org.junit.Before;
 import org.junit.Test;
 
