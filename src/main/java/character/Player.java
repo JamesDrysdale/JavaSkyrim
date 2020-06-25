@@ -27,5 +27,7 @@ public abstract class Player {
         return name;
     }
 
-
+    public double getHealthPoints() {
+        return HP;
+    }
 }

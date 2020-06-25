@@ -20,7 +20,7 @@ public class BretonTest {
 
     @Test
     public void bretonHasHealthPoints(){
-        assertEquals(100, breton.getHealthPoints(), 0);
+        assertEquals(100, breton1.getHealthPoints(), 0);
     }
 
 }
