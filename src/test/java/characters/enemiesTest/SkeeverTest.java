@@ -1,4 +1,4 @@
-package enemiesTest;
+package characters.enemiesTest;
 
 import characters.enemies.Skeever;
 import org.junit.Before;

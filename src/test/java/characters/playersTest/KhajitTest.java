@@ -1,19 +1,23 @@
-package playersTest;
+package characters.playersTest;
 
 import characters.players.Khajit;
 import characters.players.Modifiers;
 import org.junit.Before;
 import org.junit.Test;
+import weapons.OneHandedSword;
+import weapons.Weapon;
 
 import static org.junit.Assert.assertEquals;
 
 public class KhajitTest {
 
     Khajit khajit1;
+    Weapon dawnbreaker;
 
     @Before
     public void before(){
-        khajit1 = new Khajit("M'aiq", Modifiers.KHAJIT);
+        dawnbreaker = new OneHandedSword("Dawnbreaker", 20);
+        khajit1 = new Khajit("M'aiq", Modifiers.KHAJIT, dawnbreaker);
     }
 
     @Test

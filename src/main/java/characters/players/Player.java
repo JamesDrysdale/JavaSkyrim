@@ -1,6 +1,7 @@
 package characters.players;
 
 import characters.behaviours.IMelee;
+import weapons.Weapon;
 
 public abstract class Player implements IMelee{
     private String name;
@@ -12,8 +13,9 @@ public abstract class Player implements IMelee{
     private double RangeDmg;
     private double PRes;
     private double MRes;
+    private Weapon weapon;
 
-    public Player(String name, Modifiers modifier){
+    public Player(String name, Modifiers modifier, Weapon weapon){
         this.name = name;
         this.HP = 100 * modifier.getBaseHP();
         this.Stamina = 100 * modifier.getBaseStamina();
@@ -23,6 +25,7 @@ public abstract class Player implements IMelee{
         this.RangeDmg = 1 * modifier.getBaseRangeDmg();
         this.PRes = 1 * modifier.getPhysicalRes();
         this.MRes = 1 * modifier.getMagicRes();
+        this.weapon = weapon;
     }
 
     public String getName() {
@@ -62,7 +65,7 @@ public abstract class Player implements IMelee{
     }
 
     public void melee(IMelee opponent){
-//        opponent.reduceHealth()
+
     }
 
     public void takeDamage(double damage){

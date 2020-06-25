@@ -1,18 +1,22 @@
-package playersTest;
+package characters.playersTest;
 
 import characters.players.Breton;
 import characters.players.Modifiers;
 import org.junit.Before;
 import org.junit.Test;
+import weapons.OneHandedSword;
+import weapons.Weapon;
 
 import static org.junit.Assert.assertEquals;
 
 public class BretonTest {
     Breton breton1;
+    Weapon dawnbreaker;
 
     @Before
     public void before(){
-        breton1 = new Breton("Soyinka", Modifiers.BRETON);
+        dawnbreaker = new OneHandedSword("Dawnbreaker", 20);
+        breton1 = new Breton("Soyinka", Modifiers.BRETON, dawnbreaker);
     }
 
     @Test
