@@ -30,4 +30,8 @@ public abstract class Player {
     public double getHealthPoints() {
         return HP;
     }
+
+    public double getStamina() {
+        return Stamina;
+    }
 }
