@@ -1,6 +1,8 @@
 package characters.players;
 
-public abstract class Player {
+import characters.behaviours.IMelee;
+
+public abstract class Player implements IMelee{
     private String name;
     private double HP;
     private double Stamina;
@@ -57,5 +59,9 @@ public abstract class Player {
 
     public double getMRes() {
         return MRes;
+    }
+
+    public void melee(IMelee opponent){
+//        opponent.reduceHealth()
     }
 }

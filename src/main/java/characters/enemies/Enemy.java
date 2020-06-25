@@ -15,6 +15,25 @@ public abstract class Enemy {
         this.magicDmg = magicDmg;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public double getHP() {
+        return HP;
+    }
+
+    public double getMeleeDmg() {
+        return meleeDmg;
+    }
+
+    public double getRangeDmg() {
+        return rangeDmg;
+    }
+
+    public double getMagicDmg() {
+        return magicDmg;
+    }
 
 
 }
