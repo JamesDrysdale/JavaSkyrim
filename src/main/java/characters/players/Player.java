@@ -64,4 +64,8 @@ public abstract class Player implements IMelee{
     public void melee(IMelee opponent){
 //        opponent.reduceHealth()
     }
+
+    public void takeDamage(double damage){
+        this.HP -= damage;
+    }
 }

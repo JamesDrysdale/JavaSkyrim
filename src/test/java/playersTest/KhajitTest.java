@@ -56,10 +56,18 @@ public class KhajitTest {
     public void khajitHasPhysicalRes(){
         assertEquals(0.9, khajit1.getPRes(), 0.0);
     }
+
     @Test
-    public void bkhajitHasMagicRes(){
+    public void khajitHasMagicRes(){
         assertEquals(1.0, khajit1.getMRes(), 0.0);
     }
+
+    @Test
+    public void canTakeDamage() {
+        khajit1.takeDamage(10);
+        assertEquals(90, khajit1.getHealthPoints(), 0);
+    }
+
 
 }
 
