@@ -2,25 +2,25 @@ package character;
 
 public abstract class Player {
     private String name;
-    private double baseHP;
-    private double baseStamina;
-    private double baseMagic;
-    private double baseMeleeDmg;
-    private double baseMagicDmg;
-    private double baseRangeDmg;
-    private double physicalRes;
-    private double magicRes;
+    private double HP;
+    private double Stamina;
+    private double Magic;
+    private double MeleeDmg;
+    private double MagicDmg;
+    private double RangeDmg;
+    private double PRes;
+    private double MRes;
 
-    public Player(String name){
+    public Player(String name, Modifiers modifier){
         this.name = name;
-        this.baseHP = 1;
-        this.baseStamina = 1;
-        this.baseMagic = 1;
-        this.baseMeleeDmg = 1;
-        this.baseMagicDmg = 1;
-        this.baseRangeDmg = 1;
-        this.physicalRes = 1;
-        this.magicRes = 1;
+        this.HP = 1 * modifier.baseHP;
+        this.Stamina = 1 * modifier.baseStamina;
+        this.Magic = 1 * modifier.baseMagic;
+        this.MeleeDmg = 1 * modifier.baseMeleeDmg;
+        this.MagicDmg = 1 * modifier.baseMagicDmg;
+        this.RangeDmg = 1 * modifier.baseRangeDmg;
+        this.PRes = 1 * modifier.physicalRes;
+        this.MRes = 1 * modifier.magicRes;
     }
 
 }

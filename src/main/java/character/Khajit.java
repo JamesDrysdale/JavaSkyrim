@@ -1,6 +1,6 @@
 package character;
 
 public class Khajit {
-    private Modifiers
+    private Modifiers modifiers;
 
 }
